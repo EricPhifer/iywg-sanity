@@ -34,6 +34,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'video',
+      title: 'Main video',
+      type: 'mux.video',
+    }),
+    defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',
