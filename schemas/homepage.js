@@ -1,4 +1,5 @@
 import { AiOutlineHome as icon } from 'react-icons/ai';
+import { defineField } from 'sanity';
 
 export default {
     name: 'homepage',
@@ -17,6 +18,11 @@ export default {
           type: 'array',
           of: [{type: 'post'}]
         },
+        defineField({
+          name: 'video',
+          title: 'Main video',
+          type: 'mux.video',
+        }),
         {
           name: 'image', 
           title: 'Header Image', 
